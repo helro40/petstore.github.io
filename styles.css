@@ -16,7 +16,7 @@ header {
 
     background-color: #614f01; 
 
-    padding: 20px; 
+    padding: 50px; 
 
     color: rgb(255, 255, 255); 
 
@@ -26,7 +26,7 @@ header {
 
 nav a { 
 
-    margin: 0 15px; 
+    margin: 0 20px; 
 
     text-decoration: none; 
 
@@ -41,6 +41,7 @@ nav a {
 .featured { 
 
     margin: 40px; 
+    padding: 0 20px;
 
 } 
 
@@ -54,6 +55,8 @@ nav a {
 
     gap: 20px; 
 
+    padding: 0 20px;
+
 } 
 
 .pet { 
@@ -61,14 +64,15 @@ nav a {
     border: 2px solid #ddd; 
 
     padding: 20px; 
-
+    flex: 1 1 200px;
+    max-width: 300px;
     text-align: center; 
 
 } 
 
 .pet img { 
 
-    width: 150px; 
+    width: 100px; 
 
     height: 150px; 
 
@@ -97,3 +101,28 @@ button:hover {
     background-color: #0494bc; 
 
 } 
+
+@media (max-width: 600px) {
+    header {
+        padding: 30px 20px;
+    }
+
+    nav a {
+        display: block;
+        margin: 10px 0;
+    }
+
+    .featured {
+        margin: 20px 10px;
+    }
+
+    .pet-list {
+        flex-direction: column;
+        align-items: center;
+        padding: 0 10px;
+    }
+
+    .pet {
+        max-width: 90%;
+    }
+}
