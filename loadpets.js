@@ -26,6 +26,7 @@ for(let i = 0; i < pets.length; i++) {
         <h3>${pet.name}</h3>
         <p>Type: ${pet.type}</p>
         <p>Age: ${pet.age} years</p>
+        <button onclick="adoptPet()">Adopt Now</button>
     `;
     // document.getElementById('pet-list').appendChild(petDiv);
 }
